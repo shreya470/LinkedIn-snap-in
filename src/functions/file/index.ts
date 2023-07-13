@@ -26,8 +26,12 @@ export const run = async (events: any[]): Promise<Record<string, any>> => {
   });
   
   console.log(events)
+  readCSVFile(filePath)
+  .then((data) => {
+    console.log(data);
+    for (let item of data) {
   
-for(let event of events){
+      for (let item of data) {
   const updateTask = 'https://api.data365.co/v1.1/linkedin/member/${event}/update?load_activities=true&max_activities=50&access_token=ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnpkV0lpT2lKSmJtUnBZVzVKYm5OMGFYUjFkR1Z2WmxSbFkyaHViMnh2WjNsTFlXNXdkWElpTENKcFlYUWlPakUyT0RnMk16UXdOakF1TnpnME1UazJObjAuRWw1YllMTWtwbzdTRDNuVGRmSXlDZUtDMXhWSTgxbllLWm5QSE1Va19BYw==';
   try {
     const resp = await fetch(updateTask, {
@@ -80,18 +84,16 @@ for(let event of events){
         console.log("Successfully got data.");
         let respJsonBody = await resp.json()
   
-        console.log('shreya',respJsonBody.data)
-        //const items=respJsonBody.data.items
-        //const links =[]
-        //console.log(items[0])
-        //for(let item of items)
-        //{ 
-          //links.push({url:item.url})
-         // links.push({name : item.auther_username, url : item.url, likes : item.likes})
+        //console.log('shreya',respJsonBody.data)
+        
+        //console.log('Positions:', respJsonBody.data.positions);
+        //console.log('Connection Count:', respJsonBody.data.connections_count);
+        //console.log('Followers Count:', respJsonBody.data.followers_count);
+       // console.log('Location:', respJsonBody.data.location_name);
   
-        //}
-          //console.log(links)
-  
+        
+        
+
   }
   }
   catch (error) {
@@ -133,7 +135,7 @@ for(let event of events){
   //for item in resp.data
   
     
-} 
+//} 
     
 
 
