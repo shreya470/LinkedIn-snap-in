@@ -1,10 +1,10 @@
 import file from './functions/file/index';
-import function_2 from './functions/function_2/index';
+import company_fetcher from './functions/company_fetcher/index';
 
 
 export const functionFactory = {
   file,
-  function_2
+  company_fetcher,
 } as const;
 
 export type FunctionFactoryType = keyof typeof functionFactory;
