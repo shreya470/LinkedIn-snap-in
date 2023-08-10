@@ -1,28 +1,36 @@
-{
-  "payload": {
-    "actor_id": "don:identity:dvrv-us-1:devo/0:devu/1",
-    "command_id": "don:integration:dvrv-us-1:devo/0:namespace/cns:command/cname",
-    "dev_org": "don:identity:dvrv-us-1:devo/0",
-    "parameters": "commands parameters string passed by user",
-    "parent_id": "don:integration:dvrv-us-1:devo/0:snap_in/00000001-0001-0001-0001-00000001",
-    "request_id": "4QtCBSKJcKKqwQhoJKZvRQ",
-    "source_id": "don:core:dvrv-us-1:devo/0:issue/1"
-  },
-  "context": {
-    "dev_oid": "don:identity:dvrv-us-1:devo/0",
-    "source_id": "don:integration:dvrv-us-1:devo/0:namespace/kapil:command/complete_comm_k",
-    "snap_in_id": "don:integration:dvrv-us-1:devo/0:snap_in/00000001-0001-0001-0001-00000001",
-    "snap_in_version_id": "don:integration:dvrv-us-1:devo/0:snap_in_package/00000001-0001-0001-0001-00000001:snap_in_version/00000001-0001-0001-0001-00000001"
-  },
-  "execution_metadata": {
-    "request_id": "4QtCBSKJcKKqwQhoJKZvRQ",
-    "function_name": "foobar"
-  },
-  "input_data": {
-    "global_values": {},
-    "event_sources": {},
-    "keyrings": {
-      "devrev" : ""
+[
+  {
+    "payload": {
+      "actor_id": "don:identity:dvrv-us-1:devo/0:devu/1",
+      "command_id": "don:integration:dvrv-us-1:devo/0:namespace/cns:command/cname",
+      "dev_org": "don:identity:dvrv-us-1:devo/0",
+      "parameters": "commands parameters string passed by user",
+      "parent_id": "don:integration:dvrv-us-1:devo/0:snap_in/00000001-0001-0001-0001-00000001",
+      "request_id": "4QtCBSKJcKKqwQhoJKZvRQ",
+      "source_id": "don:core:dvrv-us-1:devo/0:issue/1"
+    },
+    "context": {
+      "secrets": {
+        "service_account_token": "eyJhbGciOiJSUzI1NiIsImlzcyI6Imh0dHBzOi8vYXV0aC10b2tlbi5kZXZyZXYuYWkvIiwia2lkIjoic3RzX2tpZF9yc2EiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOlsiamFudXMiXSwiYXpwIjoiZG9uOmlkZW50aXR5OmR2cnYtdXMtMTpkZXZvLzA6ZGV2dS81NzYiLCJleHAiOjE3ODYwMjcxMjMsImh0dHA6Ly9kZXZyZXYuYWkvYXV0aDBfdWlkIjoiZG9uOmlkZW50aXR5OmR2cnYtdXMtMTpkZXZvL3N1cGVyOmF1dGgwX3VzZXIvb2lkY3xva3RhLWRldnJldnwwMHU5am4xMTRqSk11YnUyRzVkNyIsImh0dHA6Ly9kZXZyZXYuYWkvYXV0aDBfdXNlcl9pZCI6Im9pZGN8b2t0YS1kZXZyZXZ8MDB1OWpuMTE0akpNdWJ1Mkc1ZDciLCJodHRwOi8vZGV2cmV2LmFpL2Rldm9fZG9uIjoiZG9uOmlkZW50aXR5OmR2cnYtdXMtMTpkZXZvLzAiLCJodHRwOi8vZGV2cmV2LmFpL2Rldm9pZCI6IkRFVi0wIiwiaHR0cDovL2RldnJldi5haS9kZXZ1aWQiOiJERVZVLTU3NiIsImh0dHA6Ly9kZXZyZXYuYWkvZGlzcGxheW5hbWUiOiJpLXNocmV5YS1uaWd3YWwiLCJodHRwOi8vZGV2cmV2LmFpL2VtYWlsIjoiaS1zaHJleWEubmlnd2FsQGRldnJldi5haSIsImh0dHA6Ly9kZXZyZXYuYWkvZnVsbG5hbWUiOiJTaHJleWEgTmlnd2FsIiwiaHR0cDovL2RldnJldi5haS90b2tlbnR5cGUiOiJ1cm46ZGV2cmV2OnBhcmFtczpvYXV0aDp0b2tlbi10eXBlOnBhdCIsImlhdCI6MTY5MTQxOTEyMywiaXNzIjoiaHR0cHM6Ly9hdXRoLXRva2VuLmRldnJldi5haS8iLCJqdGkiOiJkb246aWRlbnRpdHk6ZHZydi11cy0xOmRldm8vMDp0b2tlbi8xM21QcDhuTVMiLCJvcmdfaWQiOiJvcmdfdFRTR3pObkllcllHM3FYVyIsInN1YiI6ImRvbjppZGVudGl0eTpkdnJ2LXVzLTE6ZGV2by8wOmRldnUvNTc2In0.w7ceIgoAWRPC8fUiHRmSUWMYG63wXSuPQ1wrAwKN7B4gQg_YXUe_GalXceAuRwDfAI7bb4R7ViCoWmRSrjg4kNaLanJPhEqSoEMGjR2hsjsoo9DMT7RZ9-zV-EMwILfI4L3dRebIA4iQwMxxuIGzLkljH0V_mVG4ksI-UMAeYOvL6tT2zOPc7LWqsw6Z6cO2IyZ-Q1_7Vi7m5Ps5xLHW8kAXmFvci2tfu8s7vX7K_UF9l0Mvf2I7d0Un_K6nIeU93XHHfWd4hbQ2vq9CeDm-k_c-c79Ntqrp95tEs1zGpPDMbGPabKaoShMFd-RFT1lhollVbBq-5AM_B-wxEKFZBw" 
+      },
+      "dev_oid": "don:identity:dvrv-us-1:devo/0",
+      "source_id": "don:integration:dvrv-us-1:devo/0:namespace/kapil:command/complete_comm_k",
+      "snap_in_id": "don:integration:dvrv-us-1:devo/0:snap_in/00000001-0001-0001-0001-00000001",
+      "snap_in_version_id": "don:integration:dvrv-us-1:devo/0:snap_in_package/00000001-0001-0001-0001-00000001:snap_in_version/00000001-0001-0001-0001-00000001"
+    },
+    "execution_metadata": {
+      "request_id": "4QtCBSKJcKKqwQhoJKZvRQ",
+      "function_name": "foobar",
+      "devrev_endpoint": "https://api.devrev.ai"
+    },
+    "input_data": {
+      "global_values": {},
+      "event_sources": {},
+      "keyrings": {
+        "devrev": "",
+        "bq_token": "ya29.a0AfB_byBym-SHpH9JEhG7pvGOphBVrHo1In19IX4sdmuhRX4DWZ_aQALGuJsXDg4Jg-C_MMGVowwmgTEfQuIWFaCpp9EAU7o6Lz3zcowujNkrk0uq4KWINunCSUY_B-XVrLqZFLlzoMH8Z2KsTK2JR2i3H84-Uv7TfQaCgYKAQgSARESFQHsvYls_zbKqinQIVo8_xLLxTCvhw0169",
+        "linkedin_token": "ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnpkV0lpT2lKSmJtUnBZVzVKYm5OMGFYUjFkR1Z2WmxSbFkyaHViMnh2WjNsTFlXNXdkWElpTENKcFlYUWlPakUyT0RnMk16UXdOakF1TnpnME1UazJObjAuRWw1YllMTWtwbzdTRDNuVGRmSXlDZUtDMXhWSTgxbllLWm5QSE1Va19BYw=="
+      }
     }
   }
-}
+]

@@ -3,7 +3,7 @@ describe('Example Index Test file', () => {
   it('Testing the method', () => {
     testRunner({
       fixturePath: 'function_1_event.json',
-      functionName: 'file',
+      functionName: 'company_fetcher',
     });
   });
 });

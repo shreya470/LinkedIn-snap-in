@@ -1,4 +1,4 @@
-import { run } from '../functions/file';
+import { run } from '../functions/user_fetcher';
 
 describe('Test some function', () => {
   it('Something', () => {

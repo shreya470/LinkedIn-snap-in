@@ -1,9 +1,8 @@
-import file from './functions/file/index';
 import company_fetcher from './functions/company_fetcher/index';
-
+import user_fetcher from './functions/user_fetcher/index';
 
 export const functionFactory = {
-  file,
+  user_fetcher,
   company_fetcher,
 } as const;
 
